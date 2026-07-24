@@ -1,0 +1,32 @@
+# Env
+.env
+.env.local
+
+# Server (Maven / Java)
+server/target/
+server/.mvn/wrapper/maven-wrapper.jar
+*.class
+*.jar
+!server/.mvn/wrapper/maven-wrapper.jar
+
+# Client (Node / Vite)
+client/node_modules/
+client/dist/
+client/.vite/
+*.log
+npm-debug.log*
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Terraform
+infra/terraform/.terraform/
+infra/terraform/*.tfstate
+infra/terraform/*.tfstate.backup
+infra/terraform/.terraform.lock.hcl
+infra/terraform/terraform.tfvars
+infra/terraform/tfplan
